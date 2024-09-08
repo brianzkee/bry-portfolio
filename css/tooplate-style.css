@@ -18,7 +18,7 @@ body {
 
 .small-text {
   color: #5b5b5b;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
   padding: 8px 16px;
   border-radius: 50px;
@@ -134,13 +134,16 @@ strong {
   top: 0;
   right: 0;
   left: 0;
-  animation: BottomTotop 6s linear infinite 0s;
+  animation: BottomTotop 8s linear infinite 0s;
 }
 .animated-item:nth-child(2n + 2) {
   animation-delay: 2s;
 }
 .animated-item:nth-child(3n + 3) {
   animation-delay: 4s;
+}
+.animated-item:nth-child(4n + 4) {
+  animation-delay: 6s;
 }
 
 @keyframes BottomTotop {
