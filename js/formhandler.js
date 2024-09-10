@@ -10,7 +10,7 @@ $(document).ready(function () {
     };
 
     // Send the POST request using fetch
-    fetch('https://script.google.com/macros/s/AKfycbzN2jZDWnhLhQlF7s5K99_eSgMyJUC76BK5cENb3Rl6eZprSuacqdZGUAruVKkK4-iXVg/exec', {
+    fetch('https://script.google.com/macros/s/AKfycbyOB3RD4pPoJOou4N3dx8rVvex_H8hzevcn0QlouNOdu3Y7sjhscBTuXkjVslMU9lFitw/exec', {
       method: 'POST',
       headers: {
         'Content-Type': 'text/plain;charset=utf-8'
