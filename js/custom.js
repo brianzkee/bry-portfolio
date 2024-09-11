@@ -38,6 +38,10 @@
     loop: true,
     margin: 10,
     nav: true,
+    autoplay: true,
+    autoplayTimeout: 3000, // Time in milliseconds for each slide (2 seconds)
+    autoplayHoverPause: true, // Pause on hover
+    loop: true, // Enable looping
   });
 
   // SMOOTHSCROLL
