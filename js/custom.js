@@ -11,6 +11,7 @@
   $(window).on("scroll", function () {
     const isScrolled = $(this).scrollTop() > 50;
     const size = isScrolled ? "12px" : "16px";
+    const iconSize = isScrolled ? "18px" : "";
     const padding = isScrolled ? "5px 0" : "10px 0";
 
     $(".navbar").css({
@@ -20,6 +21,11 @@
 
     $(".navbar .nav-link, .navbar-brand, .navbar .navbar-nav").css({
       "font-size": size,
+      transition: "font-size 0.3s ease",
+    });
+
+    $(".navbar .uil-user").css({
+      "font-size": iconSize,
       transition: "font-size 0.3s ease",
     });
   });
