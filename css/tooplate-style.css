@@ -226,6 +226,7 @@ strong {
     opacity: 0;
   }
 }
+/* Initial Navbar styles */
 .navbar {
   position: fixed;
   top: 0;
@@ -233,14 +234,18 @@ strong {
   left: 0;
   z-index: 999999;
   will-change: transform;
-  transition: transform 200ms linear;
+  transition: transform 200ms linear, padding 0.3s ease;
+  background: #fff;
 }
+
 .navbar[class*="-unpinned"] {
   transform: translate(0, -150%);
 }
+
 .navbar[class*="-pinned"] {
   transform: translate(0, 0);
 }
+
 .navbar[class*="headroom--not-top"] {
   background: #ffffff;
   border-bottom: 1px solid #f0f0f0;
@@ -254,23 +259,14 @@ strong {
 
 .navbar-expand-sm .navbar-nav .nav-link {
   padding: 0 20px;
-}
-
-.nav-link {
-  font-weight: bold;
-  font-size: 16px;
   overflow: hidden;
 }
+
 .nav-link span {
   position: relative;
   display: inline-block;
   transition: transform 0.3s;
-}
-.nav-link span:before {
-  position: absolute;
-  top: 100%;
-  content: attr(data-hover);
-  transform: translate3d(0, 0, 0);
+  font-weight: bold;
 }
 
 .navbar-light .navbar-nav .nav-link:focus,
@@ -278,6 +274,7 @@ strong {
   color: #0fbcf9;
   font-weight: bold;
 }
+
 .navbar-light .navbar-nav .nav-link:focus span,
 .navbar-light .navbar-nav .nav-link:hover span {
   transform: translateY(-100%);
@@ -297,20 +294,25 @@ strong {
   cursor: pointer;
   margin-right: 10px;
 }
+
 .navbar-toggler:focus {
   outline: none;
 }
+
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:first-child {
   transform: rotate(45deg);
   top: 6px;
 }
+
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:nth-child(2) {
   display: none;
 }
+
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:last-child {
   transform: rotate(-45deg);
   bottom: 1px;
 }
+
 .navbar-toggler .navbar-toggler-icon {
   background: #212121;
   display: block;
