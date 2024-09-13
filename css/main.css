@@ -598,6 +598,10 @@ strong {
     font-size: 0.9em; /* Reduce font size for smaller screens */
     padding: 10px; /* Reduce padding for smaller screens */
   }
+
+  .project-head {
+    font-size: 1.2em; /* Add this line to reduce font size for smaller screens */
+  }
 }
 @media (max-width: 480px) {
   .thumb-header {
@@ -608,6 +612,9 @@ strong {
   .thumb-description {
     font-size: 0.8em; /* Further reduce font size for very small screens */
     padding: 5px; /* Further reduce padding for very small screens */
+  }
+  .project-head {
+    font-size: 1em; /* Add this line to further reduce font size for very small screens */
   }
 }
 @media (max-width: 580px) {
